@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hamburger-nav-bar</title>
+    <link  rel="stylesheet" href="hamburger.css" >
+</head>
+<body>
+   
+    <div class="navbar"> 
+            <div id="menu-icon">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
+        <ul class="navlinks">
+            
+            <li><a href="https://www.netflix.com/in/" target="_blank" >Home</a></li>
+            <li><a href="https://www.netflix.com/in/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount" target="_blank">Account</a></li>
+            <li><a href="https://help.netflix.com/legal/privacy" target="_blank">Privacy</a></li>
+            <li><a href="https://help.netflix.com/legal/notices" target="_blank" >Terms of use</a></li>
+            <li><a href="https://help.netflix.com/en/contactus" target="_blank">contact us</a></li>
+            <li><a href="https://help.netflix.com/en" target="_blank" >Help Center</a></li>
+        </ul>
+        <div class="menu-bg">
+
+
+        </div>
+    </div>
+    
+    <script> 
+        let menu = document.querySelector("#menu-icon")
+        let navlinks = document.querySelector(".navlinks")
+        let menubg  = document.querySelector(".menu-bg")
+        menu.onclick=function(){
+                 navlinks.classList.toggle("showlinks")
+                 menu.classList.toggle("menu-change")
+                  menubg.classList.toggle("show-bg")
+        }
+
+        
+    </script>
+</body>
+
+</html>

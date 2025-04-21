@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+     background-color: #474666;
+        background: url('./netflix2.jpg') no-repeat center center/cover;
+        height: 100vh;
+        width: 100vw;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+        position: relative;   
+}
+
+
+.navbar{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+ 
+}
+.navlinks{
+    margin-left: 20px;
+    display: none;
+
+
+}
+.navlinks a {
+    color: white;
+    text-decoration: none; 
+    font-weight: bold;
+}
+ .navlinks  li{ 
+    list-style:none ;
+    padding: 11px 0;
+}
+
+#menu-icon{
+    width: 40px;
+    height: 30px;
+    margin: 20px 0 20px 5px;
+    cursor: pointer;
+  
+
+}
+.bar{
+    height: 5px;
+    width: 40px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+#bar1{
+      transform:translateY(-4px);
+
+}
+#bar3{
+    transform:translateY(4px);
+
+}
+
+.showlinks{
+    display: block;
+}
+
+.menu-change #bar1{
+    transform: translateY(4px) rotate(-45deg);
+
+}
+.menu-change #bar2{
+   opacity:0;
+}
+
+.menu-change #bar3{
+    transform: translateY(-5px)rotate(45deg);
+}
+.menu-bg{
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: #e99498;
+    border-radius: 50%;
+    z-index: -1;
+    transition:0.4s ease;
+    width: 0;
+    height: 0;
+
+}
+.show-bg{
+    height: 590px;
+    width:550px ;
+    transform: translate(-60%,-30%);
+
+}
